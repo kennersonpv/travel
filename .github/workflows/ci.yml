@@ -56,9 +56,7 @@ jobs:
           cache-dependency-path: travel-ui/package-lock.json
 
       - name: Install dependencies
-        run: |
-          npm install -g npm@latest
-          npm ci --legacy-peer-deps
+        run: npm ci
 
       - name: Run tests
         run: npm test -- --watchAll=false
