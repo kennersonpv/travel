@@ -58,7 +58,7 @@ jobs:
       - name: Install dependencies
         run: |
           npm install -g npm@latest
-          npm ci
+          npm ci --legacy-peer-deps
 
       - name: Run tests
         run: npm test -- --watchAll=false
